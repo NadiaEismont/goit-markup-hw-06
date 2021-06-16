@@ -75,6 +75,25 @@
         </button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
+            <form class="js-speaker-form">
+              <label for="name">Имя</label>
+              <input type="text" name="name" id="name" />
+              <label for="tel">Телефон</label>
+              <input type="tel" name="tel" id="tel" />
+              <label for="mail">Почта</label>
+              <input type="email" name="name" id="mail" />
+              <label for="term"
+                >Соглашаюсь с рассылкой и принимаю
+                <span class="term-contract">Условия договора</span>
+              </label>
+              <input
+                type="checkbox"
+                name="term-contract"
+                value="term-contract"
+                id="term-contract"
+              />
+              <button type="submit">Отправить</button>
+            </form>
             <button class="button-modal-close" data-modal-close>
               <svg class="icon-close" width="11px" height="11px">
                 <use href="./icons/sprite.svg#icon-x"></use>
@@ -402,5 +421,18 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script>
+      (() => {
+        document
+          .querySelector(".js-speaker-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+          });
+      })();
+    </script>
   </body>
 </html>
