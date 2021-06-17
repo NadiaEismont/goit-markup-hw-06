@@ -209,6 +209,7 @@ footer {
 /* Modal block */
 .backdrop {
   position: fixed;
+
   top: 0;
   left: 0;
   width: 100%;
@@ -374,8 +375,7 @@ footer {
   color: var(--white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-   border: transparent;
-}
+  border: transparent;
 }
 
 /* hover profile */
@@ -813,7 +813,7 @@ footer {
 .footer-join {
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
+
   margin-left: 70px;
   /* flex-wrap: wrap; */
 }
@@ -854,6 +854,51 @@ footer {
   transition-property: fill, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe {
+  margin-left: 93px;
+}
+.footer-form {
+  display: flex;
+}
+
+.subscribe-title {
+  padding-bottom: 20px;
+}
+
+.footer-label input {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 358px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  margin-right: 12px;
+  font-size: 16px;
+  line-height: 1.31;
+  padding: 15px 16px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe-button {
+  width: 200px;
+  height: 50px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--white);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border: transparent;
+  fill: currentColor;
+  align-items: baseline;
+  margin-right: 10px;
 }
 
 /* Portfolio part */
