@@ -76,21 +76,27 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <form class="form js-speaker-form">
-              <b class="accost">Оставьте свои данные, мы вам перезвоним</b>
+              <p class="accost">Оставьте свои данные, мы вам перезвоним</p>
               <div class="form-field">
                 <label for="name">Имя</label>
-                <svg width="12" height="12">
+                <svg class="form-icon" width="12" height="12">
                   <use href="./icons/sprite.svg#icon-human"></use>
                 </svg>
-                <input type="text" name="name" id="name" autofocus />
+                <input type="text" name="name" id="name" autofocus required />
               </div>
               <div class="form-field">
                 <label for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel" />
+                <svg class="form-icon" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-tel"></use>
+                </svg>
+                <input type="tel" name="tel" id="tel" required />
               </div>
               <div class="form-field">
                 <label for="mail">Почта</label>
-                <input type="email" name="name" id="mail" />
+                <svg class="form-icon" width="16" height="12">
+                  <use href="./icons/sprite.svg#icon-mail-form"></use>
+                </svg>
+                <input type="email" name="name" id="mail" required />
               </div>
 
               <div class="form-field">
