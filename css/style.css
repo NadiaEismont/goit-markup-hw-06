@@ -316,16 +316,14 @@ footer {
   box-sizing: border-box;
   margin-bottom: 28px;
 }
-.form-field:focus {
-  border: 1px solid #2196f3;
-  fill: currentColor;
-}
+
 .form-field input {
   margin: 0;
   padding: 6px 10px 6px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
+  outline: none;
 }
 .form-field label {
   width: 100%;
@@ -336,10 +334,16 @@ footer {
   color: var(--primary-text-color);
   margin-bottom: 4px;
 }
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+.form-input:focus + .form-icon {
+  fill: var(--accent-color);
+}
 .form-field input:hover,
 .form-field input:focus {
-  border: 1px solid #2196f3;
-  fill: currentColor;
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .form-icon {
