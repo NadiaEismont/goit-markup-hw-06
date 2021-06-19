@@ -415,7 +415,8 @@ textarea:hover {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border: 2px solid var(--title-text-color);
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
 }
 .policy-input:checked + .policy::before {
   content: "";
@@ -424,8 +425,11 @@ textarea:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  vertical-align: middle;
 }
-
+.policy-input {
+  margin-left: 9px;
+}
 .policy:hover::before,
 .policy:focus::before {
   border-radius: 4px;
