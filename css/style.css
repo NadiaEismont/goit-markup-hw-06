@@ -424,6 +424,8 @@ textarea:hover {
   background-color: var(--accent-color);
   background-image: url(../icons/check.svg);
   vertical-align: middle;
+  border-color: transparent;
+  border-radius: 4px;
 }
 
 .policy:hover::before,
