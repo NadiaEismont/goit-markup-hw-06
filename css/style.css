@@ -417,23 +417,19 @@ textarea:hover {
   border: 2px solid var(--title-text-color);
   display: inline-block;
   vertical-align: middle;
+  margin-right: 9px;
 }
 .policy-input:checked + .policy::before {
   content: "";
   background-color: var(--accent-color);
   background-image: url(../icons/check.svg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   vertical-align: middle;
 }
-.policy-input {
-  margin-left: 9px;
-}
+
 .policy:hover::before,
 .policy:focus::before {
   border-radius: 4px;
-  border: transparent;
+  border-color: transparent;
 }
 
 .visually-hidden {
@@ -469,7 +465,7 @@ textarea:hover {
   color: var(--white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: transparent;
+  border-color: transparent;
 }
 
 /* hover profile */
@@ -706,7 +702,7 @@ textarea:hover {
   font-family: inherit;
   cursor: pointer;
   border-radius: 4px;
-  border: transparent;
+  border-color: transparent;
 }
 
 .button-port {
@@ -726,7 +722,7 @@ textarea:hover {
   left: 495px;
   padding: 6px 22px;
   display: inline-block;
-  border: transparent;
+  border-color: transparent;
   transition-property: box-shadow, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
