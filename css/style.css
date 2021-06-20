@@ -271,6 +271,7 @@ footer {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  background-color: var(--white);
   color: black;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -317,10 +318,11 @@ footer {
   flex-direction: column;
   position: relative;
   box-sizing: border-box;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
 }
 
-.form-field input {
+.form-input {
+  height: 40px;
   margin: 0;
   padding: 6px 10px 6px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -329,7 +331,7 @@ footer {
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-field label {
+.form-label {
   width: 100%;
   font-weight: 400;
   font-size: 12px;
@@ -352,8 +354,8 @@ footer {
   fill: var(--accent-color);
   opacity: 1;
 }
-.form-field input:hover,
-.form-field input:focus {
+.form-input:hover,
+.form-input:focus {
   border: 1px solid var(--accent-color);
 }
 
@@ -431,7 +433,7 @@ textarea:hover {
 .policy:hover::before,
 .policy:focus::before {
   border-radius: 4px;
-  border-color: transparent;
+  border-color: var(--accent-color);
 }
 
 .visually-hidden {
@@ -759,19 +761,6 @@ textarea:hover {
   margin: auto;
 }
 
-/* .team {
-  display: flex;
-  justify-content: center;
-  background: #f5f4fa;
-  flex-basis: calc(100% / 4);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  margin-left: -30px;
-  margin-top: -50px;
-} */
 .team {
   display: flex;
   flex-wrap: wrap;
@@ -806,11 +795,6 @@ textarea:hover {
 .purple {
   background: #f5f4fa;
 }
-/* .container-team-member,
-.container-team-prof {
-  align-self: auto;
-} */
-
 .profile-title {
   font-weight: 500;
   font-size: 14px;
@@ -886,7 +870,7 @@ textarea:hover {
 .adress-footer {
   display: flex;
 }
-/*  */
+
 .icons-list {
   display: flex;
   justify-content: center;
@@ -899,8 +883,6 @@ textarea:hover {
   flex-basis: calc((100% - 30px) / 4);
   margin-right: auto;
 }
-
-/*  */
 
 .footer-join {
   display: flex;
@@ -948,7 +930,7 @@ textarea:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .footer-form {
   display: flex;
@@ -987,10 +969,11 @@ textarea:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--white);
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  border: transparent;
+  border-color: transparent;
   fill: currentColor;
   margin-right: 10px;
 }
